@@ -5,38 +5,47 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Castelo Florença | Eventos, Café Colonial e Lazer</title>
+<title>Castelo Medieval</title>
 
 <link rel="stylesheet" href="style.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
 <header>
+
 <nav>
-<h1>🏰 Castelo Florença</h1>
+
+<div class="logo">
+🏰 Castelo Medieval
+</div>
 
 <ul>
-<li><a href="#sobre">Sobre</a></li>
+<li><a href="#inicio">Início</a></li>
 <li><a href="#cafe">Café Colonial</a></li>
 <li><a href="#eventos">Eventos</a></li>
-<li><a href="#piscina">Piscina</a></li>
+<li><a href="#piscina">Piscinas</a></li>
+<li><a href="#passeios">Passeios</a></li>
+<li><a href="#cadastro">Cadastro</a></li>
 <li><a href="#contato">Contato</a></li>
 </ul>
+
 </nav>
+
 </header>
 
-<section class="hero">
+<section id="inicio" class="hero">
 
-<div class="overlay">
+<div class="hero-content">
 
-<h2>O Castelo dos Seus Sonhos</h2>
+<h1>Castelo Medieval</h1>
 
 <p>
-Um espaço encantador em Ponta Grossa para casamentos,
-aniversários, eventos corporativos e momentos inesquecíveis.
+Experiências únicas, eventos inesquecíveis,
+café colonial, piscinas e lazer para toda a família.
 </p>
 
 <a href="#contato" class="btn">
@@ -47,42 +56,16 @@ Solicitar Orçamento
 
 </section>
 
-<section id="sobre">
-
-<h2>Sobre o Castelo Florença</h2>
-
-<p>
-Inspirado na arquitetura dos castelos europeus,
-o Castelo Florença oferece uma experiência única
-com espaços elegantes, áreas verdes, piscina,
-gastronomia especial e ambientes perfeitos para
-celebrações inesquecíveis.
-</p>
-
-</section>
-
-<section id="cafe" class="bg-light">
+<section id="cafe">
 
 <h2>☕ Café Colonial</h2>
 
-<div class="cards">
+<img src="imagens/cafe.jpg" alt="Café Colonial" class="foto">
 
-<div class="card">
-<h3>Pães Artesanais</h3>
-<p>Receitas tradicionais preparadas diariamente.</p>
-</div>
-
-<div class="card">
-<h3>Doces e Tortas</h3>
-<p>Sabores caseiros para toda a família.</p>
-</div>
-
-<div class="card">
-<h3>Bebidas Especiais</h3>
-<p>Cafés, chocolates quentes e sucos.</p>
-</div>
-
-</div>
+<p>
+Um delicioso café colonial com doces, bolos,
+salgados, pães artesanais e bebidas especiais.
+</p>
 
 </section>
 
@@ -94,31 +77,64 @@ celebrações inesquecíveis.
 
 <div class="card">
 <h3>Casamentos</h3>
-<p>O cenário perfeito para o seu grande dia.</p>
+<p>Momentos inesquecíveis em um cenário encantador.</p>
 </div>
 
 <div class="card">
 <h3>Aniversários</h3>
-<p>Momentos especiais celebrados em grande estilo.</p>
+<p>Comemorações especiais para toda a família.</p>
 </div>
 
 <div class="card">
 <h3>Corporativos</h3>
-<p>Confraternizações, palestras e encontros empresariais.</p>
+<p>Eventos empresariais e confraternizações.</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="piscina" class="bg-light">
+<section id="piscina">
 
-<h2>🏊 Piscina e Área de Lazer</h2>
+<h2>🏊 Piscinas</h2>
+
+<img src="imagens/piscina.jpg" alt="Piscina" class="foto">
 
 <p>
-Relaxe em um ambiente agradável com piscina,
-jardins e espaços para toda a família aproveitar.
+Área de lazer completa para crianças e adultos.
 </p>
+
+</section>
+
+<section id="passeios">
+
+<h2>🐰 Fazendinha e Passeios</h2>
+
+<img src="imagens/coelhos.jpg" alt="Coelhos" class="foto">
+
+<p>
+Contato com os animais e experiências incríveis.
+</p>
+
+</section>
+
+<section id="cadastro">
+
+<h2>Cadastro de Visitantes</h2>
+
+<form class="cadastro-form">
+
+<input type="text" placeholder="Nome Completo" required>
+
+<input type="email" placeholder="E-mail" required>
+
+<input type="tel" placeholder="Telefone" required>
+
+<button type="submit">
+Cadastrar
+</button>
+
+</form>
 
 </section>
 
@@ -128,10 +144,10 @@ jardins e espaços para toda a família aproveitar.
 
 <div class="grid">
 
-<img src="imagens/castelo.jpg" alt="Castelo">
-<img src="imagens/cafe.jpg" alt="Café Colonial">
-<img src="imagens/evento.jpg" alt="Evento">
-<img src="imagens/piscina.jpg" alt="Piscina">
+<img src="imagens/cafe.jpg" alt="">
+<img src="imagens/piscina.jpg" alt="">
+<img src="imagens/coelhos.jpg" alt="">
+<img src="imagens/eventos.jpg" alt="">
 
 </div>
 
@@ -139,7 +155,7 @@ jardins e espaços para toda a família aproveitar.
 
 <section id="contato">
 
-<h2>📞 Solicite um Orçamento</h2>
+<h2>Solicite um Orçamento</h2>
 
 <form>
 
@@ -149,14 +165,7 @@ jardins e espaços para toda a família aproveitar.
 
 <input type="tel" placeholder="Telefone">
 
-<select>
-<option>Casamento</option>
-<option>Aniversário</option>
-<option>Corporativo</option>
-<option>Outro Evento</option>
-</select>
-
-<textarea placeholder="Conte-nos sobre seu evento"></textarea>
+<textarea placeholder="Conte sobre seu evento"></textarea>
 
 <button type="submit">
 Enviar Solicitação
@@ -166,21 +175,10 @@ Enviar Solicitação
 
 </section>
 
-<a
-href="https://wa.me/5542999731907"
-class="whatsapp"
-target="_blank">
-💬
-</a>
-
 <footer>
 
 <p>
-© 2026 Castelo Florença | Ponta Grossa - PR
-</p>
-
-<p>
-Desenvolvido por Sara Wendling
+© 2026 Castelo Medieval | Todos os direitos reservados.
 </p>
 
 </footer>

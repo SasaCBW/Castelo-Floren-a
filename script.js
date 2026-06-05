@@ -1,12 +1,29 @@
-document.querySelector("form")
-.addEventListener("submit", function(e){
+// Cadastro
+const cadastroForm = document.querySelector(".cadastro-form");
 
-e.preventDefault();
+if (cadastroForm) {
+  cadastroForm.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-alert(
-"Solicitação enviada com sucesso! Entraremos em contato."
-);
+    alert("Cadastro realizado com sucesso!");
 
-this.reset();
+    cadastroForm.reset();
+  });
+}
 
+// Orçamento
+const forms = document.querySelectorAll("form");
+
+forms.forEach((form) => {
+  if (!form.classList.contains("cadastro-form")) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      alert(
+        "Solicitação enviada com sucesso! Em breve entraremos em contato."
+      );
+
+      form.reset();
+    });
+  }
 });
